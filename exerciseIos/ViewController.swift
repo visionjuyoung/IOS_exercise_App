@@ -7,13 +7,41 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    let cellViewModel: CellList = CellList()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cellViewModel.numOfCell
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FirstViewCell", for: indexPath)
+        
+        cell.textLabel?.text = cellViewModel.cellList[indexPath.row]
+        
+        return cell
     }
 
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            performSegue(withIdentifier: "UIViewSegue", sender: nil)
+        default:
+            return
+        }
+    }
 }
 
+class CellList {
+    let cellList: [String] = ["UIView", "UIImageView", "UITextField", "UITextView"]
+    
+    var numOfCell: Int {
+        return cellList.count
+    }
+}

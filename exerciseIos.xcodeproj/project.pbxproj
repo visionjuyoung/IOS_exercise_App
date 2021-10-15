@@ -16,6 +16,9 @@
 		4BB0054B271983B200FCB080 /* exerciseIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB0054A271983B200FCB080 /* exerciseIosTests.swift */; };
 		4BB00555271983B200FCB080 /* exerciseIosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00554271983B200FCB080 /* exerciseIosUITests.swift */; };
 		4BB00557271983B200FCB080 /* exerciseIosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00556271983B200FCB080 /* exerciseIosUITestsLaunchTests.swift */; };
+		4BB005662719883500FCB080 /* UIViewMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB005652719883500FCB080 /* UIViewMenuViewController.swift */; };
+		4BB005682719904700FCB080 /* CreateViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB005672719904700FCB080 /* CreateViewViewController.swift */; };
+		4BB0056A271995A700FCB080 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00569271995A700FCB080 /* AnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		4BB00550271983B200FCB080 /* exerciseIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exerciseIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB00554271983B200FCB080 /* exerciseIosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseIosUITests.swift; sourceTree = "<group>"; };
 		4BB00556271983B200FCB080 /* exerciseIosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseIosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BB005652719883500FCB080 /* UIViewMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewMenuViewController.swift; sourceTree = "<group>"; };
+		4BB005672719904700FCB080 /* CreateViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewViewController.swift; sourceTree = "<group>"; };
+		4BB00569271995A700FCB080 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		4BB00532271983B000FCB080 /* exerciseIos */ = {
 			isa = PBXGroup;
 			children = (
+				4BB005632719875D00FCB080 /* ViewList */,
 				4BB00533271983B000FCB080 /* AppDelegate.swift */,
 				4BB00535271983B000FCB080 /* SceneDelegate.swift */,
 				4BB00537271983B000FCB080 /* ViewController.swift */,
@@ -125,6 +132,24 @@
 				4BB00556271983B200FCB080 /* exerciseIosUITestsLaunchTests.swift */,
 			);
 			path = exerciseIosUITests;
+			sourceTree = "<group>";
+		};
+		4BB005632719875D00FCB080 /* ViewList */ = {
+			isa = PBXGroup;
+			children = (
+				4BB00564271987D400FCB080 /* UIView */,
+			);
+			path = ViewList;
+			sourceTree = "<group>";
+		};
+		4BB00564271987D400FCB080 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				4BB005652719883500FCB080 /* UIViewMenuViewController.swift */,
+				4BB005672719904700FCB080 /* CreateViewViewController.swift */,
+				4BB00569271995A700FCB080 /* AnimationViewController.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +285,9 @@
 			files = (
 				4BB00538271983B000FCB080 /* ViewController.swift in Sources */,
 				4BB00534271983B000FCB080 /* AppDelegate.swift in Sources */,
+				4BB005662719883500FCB080 /* UIViewMenuViewController.swift in Sources */,
+				4BB0056A271995A700FCB080 /* AnimationViewController.swift in Sources */,
+				4BB005682719904700FCB080 /* CreateViewViewController.swift in Sources */,
 				4BB00536271983B000FCB080 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
