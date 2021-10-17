@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B5693BD271C31350004D524 /* UIImageViewMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693BC271C31350004D524 /* UIImageViewMenuViewController.swift */; };
+		4B5693BF271C34660004D524 /* ViewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693BE271C34660004D524 /* ViewImageViewController.swift */; };
+		4B5693C1271C36A30004D524 /* AlphaImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693C0271C36A30004D524 /* AlphaImageViewViewController.swift */; };
+		4B5693C3271C426C0004D524 /* AnimationImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693C2271C426C0004D524 /* AnimationImageViewViewController.swift */; };
 		4BB00534271983B000FCB080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00533271983B000FCB080 /* AppDelegate.swift */; };
 		4BB00536271983B000FCB080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00535271983B000FCB080 /* SceneDelegate.swift */; };
 		4BB00538271983B000FCB080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00537271983B000FCB080 /* ViewController.swift */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B5693BC271C31350004D524 /* UIImageViewMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewMenuViewController.swift; sourceTree = "<group>"; };
+		4B5693BE271C34660004D524 /* ViewImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewImageViewController.swift; sourceTree = "<group>"; };
+		4B5693C0271C36A30004D524 /* AlphaImageViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaImageViewViewController.swift; sourceTree = "<group>"; };
+		4B5693C2271C426C0004D524 /* AnimationImageViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationImageViewViewController.swift; sourceTree = "<group>"; };
 		4BB00530271983B000FCB080 /* exerciseIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exerciseIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB00533271983B000FCB080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BB00535271983B000FCB080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +90,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B5693BB271C30D50004D524 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				4B5693BC271C31350004D524 /* UIImageViewMenuViewController.swift */,
+				4B5693BE271C34660004D524 /* ViewImageViewController.swift */,
+				4B5693C0271C36A30004D524 /* AlphaImageViewViewController.swift */,
+				4B5693C2271C426C0004D524 /* AnimationImageViewViewController.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
 		4BB00527271983B000FCB080 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +156,7 @@
 		4BB005632719875D00FCB080 /* ViewList */ = {
 			isa = PBXGroup;
 			children = (
+				4B5693BB271C30D50004D524 /* UIImageView */,
 				4BB00564271987D400FCB080 /* UIView */,
 			);
 			path = ViewList;
@@ -283,10 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5693BD271C31350004D524 /* UIImageViewMenuViewController.swift in Sources */,
 				4BB00538271983B000FCB080 /* ViewController.swift in Sources */,
 				4BB00534271983B000FCB080 /* AppDelegate.swift in Sources */,
 				4BB005662719883500FCB080 /* UIViewMenuViewController.swift in Sources */,
+				4B5693C1271C36A30004D524 /* AlphaImageViewViewController.swift in Sources */,
 				4BB0056A271995A700FCB080 /* AnimationViewController.swift in Sources */,
+				4B5693C3271C426C0004D524 /* AnimationImageViewViewController.swift in Sources */,
+				4B5693BF271C34660004D524 /* ViewImageViewController.swift in Sources */,
 				4BB005682719904700FCB080 /* CreateViewViewController.swift in Sources */,
 				4BB00536271983B000FCB080 /* SceneDelegate.swift in Sources */,
 			);

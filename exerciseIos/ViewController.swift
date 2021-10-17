@@ -32,6 +32,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         switch indexPath.row {
         case 0:
             performSegue(withIdentifier: "UIViewSegue", sender: nil)
+        case 1:
+            performSegue(withIdentifier: "UIImageViewSegue", sender: nil)
         default:
             return
         }
