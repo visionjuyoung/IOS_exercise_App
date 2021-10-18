@@ -47,6 +47,7 @@
                     <connections>
                         <segue destination="rPP-LR-JaN" kind="show" identifier="UIViewSegue" id="1X5-M7-BLj"/>
                         <segue destination="t5q-lM-xk9" kind="show" identifier="UIImageViewSegue" id="n3I-by-yKp"/>
+                        <segue destination="0lo-Kh-PQd" kind="show" identifier="UITextFieldViewSegue" id="DM4-QV-pNr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -189,6 +190,92 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wjs-yv-cV8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2383" y="-697"/>
+        </scene>
+        <!--Text Field View View Controller-->
+        <scene sceneID="Hhj-Jg-2UU">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="0lo-Kh-PQd" customClass="UITextFieldViewViewController" customModule="exerciseIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0SQ-ZO-pxO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UITextField" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CM-ty-eCW">
+                                <rect key="frame" x="121.5" y="60" width="171.5" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3os-9d-Hc7">
+                                <rect key="frame" x="336.5" y="50" width="61.5" height="61.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3os-9d-Hc7" secondAttribute="height" multiplier="1:1" id="gWK-VQ-QXX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.left.fill" catalog="system" buttonSize="large"/>
+                                <connections>
+                                    <action selector="close:" destination="0lo-Kh-PQd" eventType="touchUpInside" id="qCH-uy-rTq"/>
+                                    <action selector="closeButton:" destination="t5q-lM-xk9" eventType="touchUpInside" id="2xe-4R-XR8"/>
+                                    <action selector="touchCloseButton:" destination="rPP-LR-JaN" eventType="touchUpInside" id="nau-hL-PVL"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CVa-5B-AIH">
+                                <rect key="frame" x="16" y="174" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiV-fw-TNl">
+                                <rect key="frame" x="121.5" y="128" width="171.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgE-9s-Z9p">
+                                <rect key="frame" x="121.5" y="233" width="171.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="inputButton:" destination="0lo-Kh-PQd" eventType="touchUpInside" id="A6f-d5-7LL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zo2-ex-hTe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="CVa-5B-AIH" firstAttribute="leading" secondItem="Zo2-ex-hTe" secondAttribute="leading" constant="16" id="5nA-Dh-fFE"/>
+                            <constraint firstItem="cgE-9s-Z9p" firstAttribute="top" secondItem="CVa-5B-AIH" secondAttribute="bottom" constant="25" id="6cC-5I-6vE"/>
+                            <constraint firstItem="cgE-9s-Z9p" firstAttribute="leading" secondItem="GiV-fw-TNl" secondAttribute="leading" id="6pB-0l-mFH"/>
+                            <constraint firstItem="3os-9d-Hc7" firstAttribute="width" secondItem="3os-9d-Hc7" secondAttribute="height" multiplier="1:1" id="7wH-3E-2La"/>
+                            <constraint firstItem="GiV-fw-TNl" firstAttribute="trailing" secondItem="4CM-ty-eCW" secondAttribute="trailing" id="8IY-FP-Lqv"/>
+                            <constraint firstItem="GiV-fw-TNl" firstAttribute="top" secondItem="4CM-ty-eCW" secondAttribute="bottom" constant="25" id="8iA-ze-fBP"/>
+                            <constraint firstItem="Zo2-ex-hTe" firstAttribute="trailing" secondItem="3os-9d-Hc7" secondAttribute="trailing" constant="16" id="BhX-cM-xvj"/>
+                            <constraint firstItem="4CM-ty-eCW" firstAttribute="centerX" secondItem="0SQ-ZO-pxO" secondAttribute="centerX" id="EAe-Te-P6d"/>
+                            <constraint firstItem="4CM-ty-eCW" firstAttribute="top" secondItem="Zo2-ex-hTe" secondAttribute="top" constant="16" id="KNT-DA-l5Q"/>
+                            <constraint firstItem="CVa-5B-AIH" firstAttribute="top" secondItem="GiV-fw-TNl" secondAttribute="bottom" constant="25" id="M9M-ep-AvW"/>
+                            <constraint firstItem="3os-9d-Hc7" firstAttribute="top" secondItem="4CM-ty-eCW" secondAttribute="top" constant="-10" id="Opk-uH-AeN"/>
+                            <constraint firstItem="Zo2-ex-hTe" firstAttribute="trailing" secondItem="CVa-5B-AIH" secondAttribute="trailing" constant="16" id="PfK-iF-hUX"/>
+                            <constraint firstItem="3os-9d-Hc7" firstAttribute="width" secondItem="3os-9d-Hc7" secondAttribute="height" multiplier="1:1" id="Q4w-vl-7S3"/>
+                            <constraint firstItem="GiV-fw-TNl" firstAttribute="leading" secondItem="4CM-ty-eCW" secondAttribute="leading" id="Ydm-C1-sGi"/>
+                            <constraint firstItem="cgE-9s-Z9p" firstAttribute="trailing" secondItem="GiV-fw-TNl" secondAttribute="trailing" id="axt-WP-MVi"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="l9M-p7-0zE" appends="YES" id="VUh-hB-LUw"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="e4N-Do-FAW"/>
+                    <connections>
+                        <outlet property="inputNumTextField" destination="CVa-5B-AIH" id="sp5-xN-QBe"/>
+                        <outlet property="numberLabel" destination="GiV-fw-TNl" id="i5m-5D-60m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBU-9X-gBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="l9M-p7-0zE">
+                    <connections>
+                        <action selector="keyboardResignTap:" destination="0lo-Kh-PQd" id="rFC-CS-R5D"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2371.0144927536235" y="-45.535714285714285"/>
         </scene>
         <!--View Image View Controller-->
         <scene sceneID="GbK-RA-pno">
