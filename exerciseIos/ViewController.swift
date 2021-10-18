@@ -36,6 +36,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             performSegue(withIdentifier: "UIImageViewSegue", sender: nil)
         case 2:
             performSegue(withIdentifier: "UITextFieldViewSegue", sender: nil)
+        case 3:
+            performSegue(withIdentifier: "UITextViewSegue", sender: nil)
         default:
             return
         }
