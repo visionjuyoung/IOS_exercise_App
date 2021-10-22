@@ -49,12 +49,12 @@
                         <segue destination="t5q-lM-xk9" kind="show" identifier="UIImageViewSegue" id="n3I-by-yKp"/>
                         <segue destination="0lo-Kh-PQd" kind="show" identifier="UITextFieldViewSegue" id="DM4-QV-pNr"/>
                         <segue destination="SCW-pH-Bog" kind="show" identifier="UITextViewSegue" id="H8a-k8-brP"/>
-                        <segue destination="VCb-V3-XoF" kind="show" identifier="UISliderViewSegue" id="SKA-J2-wPm"/>
+                        <segue destination="VCb-V3-XoF" kind="show" identifier="UISliderViewSegue" id="b6p-a5-Rcg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-168" y="1463"/>
+            <point key="canvasLocation" x="-314" y="2375"/>
         </scene>
         <!--Text View View Controller-->
         <scene sceneID="9qf-KV-X1M">
@@ -429,6 +429,7 @@
                                 <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.left.fill" catalog="system" buttonSize="large"/>
                                 <connections>
                                     <action selector="closeButton:" destination="t5q-lM-xk9" eventType="touchUpInside" id="apD-og-gyz"/>
+                                    <action selector="closeButton:" destination="SCW-pH-Bog" eventType="touchUpInside" id="mk7-vt-Ufq"/>
                                     <action selector="touchCloseButton:" destination="rPP-LR-JaN" eventType="touchUpInside" id="Xnl-1o-u5g"/>
                                 </connections>
                             </button>
@@ -575,7 +576,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UtH-Q6-SWd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2348" y="1313"/>
+            <point key="canvasLocation" x="2383" y="1318"/>
         </scene>
         <!--View Image View Controller-->
         <scene sceneID="GbK-RA-pno">

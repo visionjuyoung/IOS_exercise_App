@@ -38,6 +38,9 @@ class UITextViewMenuViewController: UIViewController, UITableViewDataSource, UIT
         }
     }
 
+    @IBAction func closeButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 class TextViewCell {
