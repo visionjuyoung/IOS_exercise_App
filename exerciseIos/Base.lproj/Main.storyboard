@@ -49,11 +49,12 @@
                         <segue destination="t5q-lM-xk9" kind="show" identifier="UIImageViewSegue" id="n3I-by-yKp"/>
                         <segue destination="0lo-Kh-PQd" kind="show" identifier="UITextFieldViewSegue" id="DM4-QV-pNr"/>
                         <segue destination="SCW-pH-Bog" kind="show" identifier="UITextViewSegue" id="H8a-k8-brP"/>
+                        <segue destination="VCb-V3-XoF" kind="show" identifier="UISliderViewSegue" id="SKA-J2-wPm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="84"/>
+            <point key="canvasLocation" x="-168" y="1463"/>
         </scene>
         <!--Text View View Controller-->
         <scene sceneID="9qf-KV-X1M">
@@ -128,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vo9-hl-Jzl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2542" y="644"/>
+            <point key="canvasLocation" x="3096" y="644"/>
         </scene>
         <!--Text View Auto Size View Controller-->
         <scene sceneID="ukG-ts-KZ8">
@@ -180,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Auj-Oy-W67" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3306" y="644"/>
+            <point key="canvasLocation" x="3767" y="644"/>
         </scene>
         <!--View Menu View Controller-->
         <scene sceneID="4zJ-4a-lBP">
@@ -474,7 +475,107 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edl-eD-BiO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1686" y="644"/>
+            <point key="canvasLocation" x="2371" y="644"/>
+        </scene>
+        <!--Slider View View Controller-->
+        <scene sceneID="Ooj-55-AW5">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="VCb-V3-XoF" customClass="UISliderViewViewController" customModule="exerciseIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tPr-I7-ezw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UISlider" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2h-8J-A27">
+                                <rect key="frame" x="146" y="60" width="122" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MtT-eo-omi">
+                                <rect key="frame" x="336.5" y="50" width="61.5" height="61.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MtT-eo-omi" secondAttribute="height" multiplier="1:1" id="vQj-2F-aGZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.left.fill" catalog="system" buttonSize="large"/>
+                                <connections>
+                                    <action selector="closeButton:" destination="t5q-lM-xk9" eventType="touchUpInside" id="BLX-dH-Lvk"/>
+                                    <action selector="closeButton:" destination="VCb-V3-XoF" eventType="touchUpInside" id="g8G-aN-t9F"/>
+                                    <action selector="touchCloseButton:" destination="rPP-LR-JaN" eventType="touchUpInside" id="jkJ-TZ-TAh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saq-yI-iYB">
+                                <rect key="frame" x="16" y="119" width="382" height="382"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="saq-yI-iYB" secondAttribute="height" multiplier="1:1" id="2sl-Nz-03d"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="YBZ-Ix-7jn">
+                                <rect key="frame" x="16" y="517" width="382" height="329"/>
+                                <subviews>
+                                    <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="127" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="hq9-C7-QgO">
+                                        <rect key="frame" x="-2" y="0.0" width="386" height="64.5"/>
+                                        <color key="minimumTrackTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="colorChanged:" destination="VCb-V3-XoF" eventType="valueChanged" id="75d-0c-XfG"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="127" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="5TY-fG-0Tl">
+                                        <rect key="frame" x="-2" y="88.5" width="386" height="64.5"/>
+                                        <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                        <connections>
+                                            <action selector="colorChanged:" destination="VCb-V3-XoF" eventType="valueChanged" id="A3V-zl-bL4"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="127" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="tTX-Cm-yVC">
+                                        <rect key="frame" x="-2" y="177" width="386" height="64.5"/>
+                                        <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
+                                        <connections>
+                                            <action selector="colorChanged:" destination="VCb-V3-XoF" eventType="valueChanged" id="rn9-oj-xRX"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Y5e-wG-wMC">
+                                        <rect key="frame" x="-2" y="265.5" width="386" height="64.5"/>
+                                        <color key="minimumTrackTintColor" systemColor="labelColor"/>
+                                        <connections>
+                                            <action selector="colorChanged:" destination="VCb-V3-XoF" eventType="valueChanged" id="ggj-Xw-c9l"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TXK-8z-tGO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f2h-8J-A27" firstAttribute="top" secondItem="TXK-8z-tGO" secondAttribute="top" constant="16" id="3Fg-Xr-N4T"/>
+                            <constraint firstItem="YBZ-Ix-7jn" firstAttribute="leading" secondItem="TXK-8z-tGO" secondAttribute="leading" constant="16" id="L1d-aU-AYz"/>
+                            <constraint firstItem="saq-yI-iYB" firstAttribute="leading" secondItem="TXK-8z-tGO" secondAttribute="leading" constant="16" id="MBM-iU-kDH"/>
+                            <constraint firstItem="MtT-eo-omi" firstAttribute="top" secondItem="f2h-8J-A27" secondAttribute="top" constant="-10" id="SfC-My-Fn3"/>
+                            <constraint firstItem="MtT-eo-omi" firstAttribute="width" secondItem="MtT-eo-omi" secondAttribute="height" multiplier="1:1" id="TA6-7s-X69"/>
+                            <constraint firstItem="YBZ-Ix-7jn" firstAttribute="top" secondItem="saq-yI-iYB" secondAttribute="bottom" constant="16" id="U0V-V2-dhH"/>
+                            <constraint firstItem="f2h-8J-A27" firstAttribute="centerX" secondItem="tPr-I7-ezw" secondAttribute="centerX" id="Uc8-lM-ddS"/>
+                            <constraint firstItem="MtT-eo-omi" firstAttribute="width" secondItem="MtT-eo-omi" secondAttribute="height" multiplier="1:1" id="YOF-XI-wvQ"/>
+                            <constraint firstItem="MtT-eo-omi" firstAttribute="width" secondItem="MtT-eo-omi" secondAttribute="height" multiplier="1:1" id="b9l-h3-fV1"/>
+                            <constraint firstItem="TXK-8z-tGO" firstAttribute="trailing" secondItem="saq-yI-iYB" secondAttribute="trailing" constant="16" id="en3-i1-cSw"/>
+                            <constraint firstItem="TXK-8z-tGO" firstAttribute="bottom" secondItem="YBZ-Ix-7jn" secondAttribute="bottom" constant="16" id="heG-wf-gOV"/>
+                            <constraint firstItem="TXK-8z-tGO" firstAttribute="trailing" secondItem="YBZ-Ix-7jn" secondAttribute="trailing" constant="16" id="qJ5-Nm-CFd"/>
+                            <constraint firstItem="saq-yI-iYB" firstAttribute="top" secondItem="f2h-8J-A27" secondAttribute="bottom" constant="16" id="qzh-Dq-kMO"/>
+                            <constraint firstItem="TXK-8z-tGO" firstAttribute="trailing" secondItem="MtT-eo-omi" secondAttribute="trailing" constant="16" id="wNZ-wt-CxI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gbc-VT-LeA"/>
+                    <connections>
+                        <outlet property="alphaSlider" destination="Y5e-wG-wMC" id="RLt-ie-2tT"/>
+                        <outlet property="backgroundColorView" destination="saq-yI-iYB" id="l49-zX-RUf"/>
+                        <outlet property="blueSlider" destination="tTX-Cm-yVC" id="0LD-Hy-ofB"/>
+                        <outlet property="greenSlider" destination="5TY-fG-0Tl" id="xW1-0W-rCk"/>
+                        <outlet property="redSlider" destination="hq9-C7-QgO" id="QTR-km-uTS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UtH-Q6-SWd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2348" y="1313"/>
         </scene>
         <!--View Image View Controller-->
         <scene sceneID="GbK-RA-pno">
@@ -800,6 +901,12 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

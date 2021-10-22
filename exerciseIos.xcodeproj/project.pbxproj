@@ -15,6 +15,7 @@
 		4B5693C9271D4DD30004D524 /* UITextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693C8271D4DD30004D524 /* UITextViewViewController.swift */; };
 		4B5693CB271D59AF0004D524 /* UITextViewMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693CA271D59AF0004D524 /* UITextViewMenuViewController.swift */; };
 		4B5693CD271D5E070004D524 /* UITextViewAutoSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693CC271D5E070004D524 /* UITextViewAutoSizeViewController.swift */; };
+		4B5693D027214D5C0004D524 /* UISliderViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693CF27214D5C0004D524 /* UISliderViewViewController.swift */; };
 		4BB00534271983B000FCB080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00533271983B000FCB080 /* AppDelegate.swift */; };
 		4BB00536271983B000FCB080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00535271983B000FCB080 /* SceneDelegate.swift */; };
 		4BB00538271983B000FCB080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00537271983B000FCB080 /* ViewController.swift */; };
@@ -55,6 +56,7 @@
 		4B5693C8271D4DD30004D524 /* UITextViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewViewController.swift; sourceTree = "<group>"; };
 		4B5693CA271D59AF0004D524 /* UITextViewMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewMenuViewController.swift; sourceTree = "<group>"; };
 		4B5693CC271D5E070004D524 /* UITextViewAutoSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewAutoSizeViewController.swift; sourceTree = "<group>"; };
+		4B5693CF27214D5C0004D524 /* UISliderViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderViewViewController.swift; sourceTree = "<group>"; };
 		4BB00530271983B000FCB080 /* exerciseIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exerciseIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB00533271983B000FCB080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BB00535271983B000FCB080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,14 @@
 			path = UITextView;
 			sourceTree = "<group>";
 		};
+		4B5693CE27214D470004D524 /* UISlider */ = {
+			isa = PBXGroup;
+			children = (
+				4B5693CF27214D5C0004D524 /* UISliderViewViewController.swift */,
+			);
+			path = UISlider;
+			sourceTree = "<group>";
+		};
 		4BB00527271983B000FCB080 = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +192,7 @@
 		4BB005632719875D00FCB080 /* ViewList */ = {
 			isa = PBXGroup;
 			children = (
+				4B5693CE27214D470004D524 /* UISlider */,
 				4B5693C7271D4DC00004D524 /* UITextView */,
 				4B5693C4271D448F0004D524 /* UITextField */,
 				4B5693BB271C30D50004D524 /* UIImageView */,
@@ -344,6 +355,7 @@
 				4B5693BF271C34660004D524 /* ViewImageViewController.swift in Sources */,
 				4BB005682719904700FCB080 /* CreateViewViewController.swift in Sources */,
 				4BB00536271983B000FCB080 /* SceneDelegate.swift in Sources */,
+				4B5693D027214D5C0004D524 /* UISliderViewViewController.swift in Sources */,
 				4B5693CB271D59AF0004D524 /* UITextViewMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

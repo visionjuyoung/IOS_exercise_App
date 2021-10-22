@@ -38,6 +38,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             performSegue(withIdentifier: "UITextFieldViewSegue", sender: nil)
         case 3:
             performSegue(withIdentifier: "UITextViewSegue", sender: nil)
+        case 4:
+            performSegue(withIdentifier: "UISliderViewSegue", sender: nil)
         default:
             return
         }
@@ -45,7 +47,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 }
 
 class CellList {
-    let cellList: [String] = ["UIView", "UIImageView", "UITextField", "UITextView"]
+    let cellList: [String] = ["UIView", "UIImageView", "UITextField", "UITextView", "UISlider"]
     
     var numOfCell: Int {
         return cellList.count
