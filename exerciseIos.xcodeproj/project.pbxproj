@@ -25,6 +25,12 @@
 		4B5693DF2722AEE90004D524 /* FinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693DE2722AEE90004D524 /* FinViewController.swift */; };
 		4B5693E1272696370004D524 /* AnimalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693E0272696370004D524 /* AnimalInfo.swift */; };
 		4B5693E8272AC25E0004D524 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693E7272AC25E0004D524 /* UserInfo.swift */; };
+		4B7A395C272BFC0600E1C0BE /* JsonMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A395B272BFC0600E1C0BE /* JsonMainViewController.swift */; };
+		4B7A395E272BFC1500E1C0BE /* JsonQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A395D272BFC1500E1C0BE /* JsonQuestionViewController.swift */; };
+		4B7A3960272BFC1F00E1C0BE /* JsonResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A395F272BFC1F00E1C0BE /* JsonResultViewController.swift */; };
+		4B7A3962272BFDDF00E1C0BE /* Qusetion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A3961272BFDDF00E1C0BE /* Qusetion.swift */; };
+		4B7A3964272BFEDF00E1C0BE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A3963272BFEDF00E1C0BE /* Result.swift */; };
+		4B7A3966272BFFE800E1C0BE /* DiscUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7A3965272BFFE800E1C0BE /* DiscUserInfo.swift */; };
 		4BB00534271983B000FCB080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00533271983B000FCB080 /* AppDelegate.swift */; };
 		4BB00536271983B000FCB080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00535271983B000FCB080 /* SceneDelegate.swift */; };
 		4BB00538271983B000FCB080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00537271983B000FCB080 /* ViewController.swift */; };
@@ -75,6 +81,12 @@
 		4B5693DE2722AEE90004D524 /* FinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinViewController.swift; sourceTree = "<group>"; };
 		4B5693E0272696370004D524 /* AnimalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalInfo.swift; sourceTree = "<group>"; };
 		4B5693E7272AC25E0004D524 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		4B7A395B272BFC0600E1C0BE /* JsonMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMainViewController.swift; sourceTree = "<group>"; };
+		4B7A395D272BFC1500E1C0BE /* JsonQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonQuestionViewController.swift; sourceTree = "<group>"; };
+		4B7A395F272BFC1F00E1C0BE /* JsonResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonResultViewController.swift; sourceTree = "<group>"; };
+		4B7A3961272BFDDF00E1C0BE /* Qusetion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qusetion.swift; sourceTree = "<group>"; };
+		4B7A3963272BFEDF00E1C0BE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		4B7A3965272BFFE800E1C0BE /* DiscUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscUserInfo.swift; sourceTree = "<group>"; };
 		4BB00530271983B000FCB080 /* exerciseIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exerciseIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB00533271983B000FCB080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BB00535271983B000FCB080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +188,27 @@
 			path = UIAlertController;
 			sourceTree = "<group>";
 		};
+		4B7A395A272BF80B00E1C0BE /* JSONDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A395B272BFC0600E1C0BE /* JsonMainViewController.swift */,
+				4B7A395D272BFC1500E1C0BE /* JsonQuestionViewController.swift */,
+				4B7A395F272BFC1F00E1C0BE /* JsonResultViewController.swift */,
+				4B7A3967272C040B00E1C0BE /* Model */,
+			);
+			path = JSONDecoder;
+			sourceTree = "<group>";
+		};
+		4B7A3967272C040B00E1C0BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A3961272BFDDF00E1C0BE /* Qusetion.swift */,
+				4B7A3963272BFEDF00E1C0BE /* Result.swift */,
+				4B7A3965272BFFE800E1C0BE /* DiscUserInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4BB00527271983B000FCB080 = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +266,7 @@
 		4BB005632719875D00FCB080 /* ViewList */ = {
 			isa = PBXGroup;
 			children = (
+				4B7A395A272BF80B00E1C0BE /* JSONDecoder */,
 				4B5693E2272AB8740004D524 /* UIAlertController */,
 				4B5693D92722AE9C0004D524 /* UINavigationController */,
 				4B5693CE27214D470004D524 /* UISlider */,
@@ -387,22 +421,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7A3964272BFEDF00E1C0BE /* Result.swift in Sources */,
 				4B5693CD271D5E070004D524 /* UITextViewAutoSizeViewController.swift in Sources */,
 				4B5693DD2722AEDD0004D524 /* DetailViewController.swift in Sources */,
 				4B5693BD271C31350004D524 /* UIImageViewMenuViewController.swift in Sources */,
 				4BB00538271983B000FCB080 /* ViewController.swift in Sources */,
 				4B5693C9271D4DD30004D524 /* UITextViewViewController.swift in Sources */,
+				4B7A3962272BFDDF00E1C0BE /* Qusetion.swift in Sources */,
 				4B070EBE272AD1490015FCD0 /* LogInPageViewController.swift in Sources */,
 				4BB00534271983B000FCB080 /* AppDelegate.swift in Sources */,
 				4BB005662719883500FCB080 /* UIViewMenuViewController.swift in Sources */,
 				4B5693C6271D44A90004D524 /* UITextFieldViewViewController.swift in Sources */,
 				4B5693E1272696370004D524 /* AnimalInfo.swift in Sources */,
+				4B7A3966272BFFE800E1C0BE /* DiscUserInfo.swift in Sources */,
 				4B5693C1271C36A30004D524 /* AlphaImageViewViewController.swift in Sources */,
 				4B5693DB2722AECF0004D524 /* InitialMenuViewController.swift in Sources */,
 				4BB0056A271995A700FCB080 /* AnimationViewController.swift in Sources */,
 				4B5693C3271C426C0004D524 /* AnimationImageViewViewController.swift in Sources */,
 				4B5693BF271C34660004D524 /* ViewImageViewController.swift in Sources */,
 				4BB005682719904700FCB080 /* CreateViewViewController.swift in Sources */,
+				4B7A395E272BFC1500E1C0BE /* JsonQuestionViewController.swift in Sources */,
+				4B7A3960272BFC1F00E1C0BE /* JsonResultViewController.swift in Sources */,
+				4B7A395C272BFC0600E1C0BE /* JsonMainViewController.swift in Sources */,
 				4BB00536271983B000FCB080 /* SceneDelegate.swift in Sources */,
 				4B5693D027214D5C0004D524 /* UISliderViewViewController.swift in Sources */,
 				4B5693DF2722AEE90004D524 /* FinViewController.swift in Sources */,
