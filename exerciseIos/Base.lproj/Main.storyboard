@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mf2-aZ-oDH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-314" y="2375"/>
+            <point key="canvasLocation" x="-826" y="4113"/>
         </scene>
         <!--Text View View Controller-->
         <scene sceneID="9qf-KV-X1M">
@@ -1356,6 +1356,44 @@
             </objects>
             <point key="canvasLocation" x="2325" y="3408"/>
         </scene>
+        <!--Todos-->
+        <scene sceneID="VNQ-oB-9eJ">
+            <objects>
+                <tableViewController id="fP1-ov-fNl" customClass="TodosTableViewController" customModule="exerciseIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="pdh-I3-wD3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodoCell" id="6bT-KM-js6">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6bT-KM-js6" id="mVV-OB-vb2">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="xYY-5f-xEg" kind="show" id="qOf-kA-kon"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fP1-ov-fNl" id="Xok-dy-iJQ"/>
+                            <outlet property="delegate" destination="fP1-ov-fNl" id="rWO-BK-0Aq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Todos" id="Bfv-o1-9kg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="b1W-iw-Ppt">
+                            <connections>
+                                <segue destination="mnh-fV-972" kind="presentation" id="LK4-rs-kDf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CIM-k8-Wxg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3231.884057971015" y="4120.9821428571431"/>
+        </scene>
         <!--Json Question View Controller-->
         <scene sceneID="4YT-Cg-Jjs">
             <objects>
@@ -1449,6 +1487,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJK-8T-VUY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4197.1014492753629" y="3407.8125"/>
+        </scene>
+        <!--Todo View Controller-->
+        <scene sceneID="cq1-B0-s3n">
+            <objects>
+                <viewController storyboardIdentifier="TodoViewController" id="xYY-5f-xEg" customClass="TodoViewController" customModule="exerciseIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iqq-12-ZER">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Q27-uZ-UWa">
+                                <rect key="frame" x="16" y="108" width="382" height="405"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TLj-hr-xR6">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3sB-54-WoR">
+                                        <rect key="frame" x="0.0" y="42" width="382" height="100"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Q7D-JU-mMm"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="yc2-ws-rpC">
+                                        <rect key="frame" x="0.0" y="150" width="382" height="216"/>
+                                    </datePicker>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="egw-Fc-fjM">
+                                        <rect key="frame" x="0.0" y="374" width="382" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알림 받기" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8r-pO-yty">
+                                                <rect key="frame" x="0.0" y="0.0" width="325" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0oe-k6-iBo">
+                                                <rect key="frame" x="333" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I1Q-Ze-G9t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q27-uZ-UWa" firstAttribute="leading" secondItem="I1Q-Ze-G9t" secondAttribute="leading" constant="16" id="FmI-Y1-NAA"/>
+                            <constraint firstItem="I1Q-Ze-G9t" firstAttribute="trailing" secondItem="Q27-uZ-UWa" secondAttribute="trailing" constant="16" id="KS8-ho-I6D"/>
+                            <constraint firstItem="Q27-uZ-UWa" firstAttribute="top" secondItem="I1Q-Ze-G9t" secondAttribute="top" constant="20" id="kZ6-KN-FRZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="X2u-eL-GfF"/>
+                    <connections>
+                        <outlet property="alramButton" destination="0oe-k6-iBo" id="Riw-Kl-Nnv"/>
+                        <outlet property="dueDatePicker" destination="yc2-ws-rpC" id="wRa-Se-KSh"/>
+                        <outlet property="memoTextView" destination="3sB-54-WoR" id="adJ-uk-WLf"/>
+                        <outlet property="titleField" destination="TLj-hr-xR6" id="4DZ-jy-561"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3u-k4-2Ik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5077" y="4113"/>
         </scene>
         <!--Json Result View Controller-->
         <scene sceneID="XjA-6D-Pbn">
@@ -1547,8 +1651,45 @@
             </objects>
             <point key="canvasLocation" x="3286.9565217391305" y="3407.8125"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Lcv-2u-HDD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mf2-aZ-oDH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XbS-0X-n8L">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fP1-ov-fNl" kind="relationship" relationship="rootViewController" id="zQf-QF-cMR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tay-Ud-tvB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2321.739130434783" y="4120.9821428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yRR-hj-BVc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mnh-fV-972" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AVE-gh-Mx0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xYY-5f-xEg" kind="relationship" relationship="rootViewController" id="xtG-h7-Zsx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPQ-hM-gnI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4197" y="4121"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="qOf-kA-kon"/>
         <segue reference="01a-AO-n7W"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1562,6 +1703,9 @@
         </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
