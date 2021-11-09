@@ -70,6 +70,8 @@ class TodoViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    
+    
     @objc private func touchUpEditButton(_ sender: UIBarButtonItem) {
         self.mode = Mode.edit
     }

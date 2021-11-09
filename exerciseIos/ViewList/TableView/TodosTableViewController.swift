@@ -21,7 +21,6 @@ class TodosTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.navigationItem.leftBarButtonItem = self.editButtonItem
     }
     
@@ -33,7 +32,7 @@ class TodosTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -92,4 +91,5 @@ extension TodosTableViewController: UNUserNotificationCenterDelegate {
         
         completionHandler()
     }
+    
 }
