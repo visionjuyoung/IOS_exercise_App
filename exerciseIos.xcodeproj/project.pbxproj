@@ -34,6 +34,8 @@
 		4B857B432733BFF200BCC424 /* TodosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B857B422733BFF200BCC424 /* TodosTableViewController.swift */; };
 		4B857B472733C01400BCC424 /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B857B462733C01400BCC424 /* TodoViewController.swift */; };
 		4B857B492733C23800BCC424 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B857B482733C23800BCC424 /* Todo.swift */; };
+		4B8DAF6D273BA2330037D21B /* redViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8DAF6C273BA2330037D21B /* redViewController.swift */; };
+		4B8DAF70273BA86B0037D21B /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8DAF6F273BA86B0037D21B /* GestureViewController.swift */; };
 		4BB00534271983B000FCB080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00533271983B000FCB080 /* AppDelegate.swift */; };
 		4BB00536271983B000FCB080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00535271983B000FCB080 /* SceneDelegate.swift */; };
 		4BB00538271983B000FCB080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB00537271983B000FCB080 /* ViewController.swift */; };
@@ -93,6 +95,8 @@
 		4B857B422733BFF200BCC424 /* TodosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosTableViewController.swift; sourceTree = "<group>"; };
 		4B857B462733C01400BCC424 /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		4B857B482733C23800BCC424 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		4B8DAF6C273BA2330037D21B /* redViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redViewController.swift; sourceTree = "<group>"; };
+		4B8DAF6F273BA86B0037D21B /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
 		4BB00530271983B000FCB080 /* exerciseIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exerciseIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB00533271983B000FCB080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BB00535271983B000FCB080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -225,6 +229,22 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		4B8DAF6B273BA2140037D21B /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				4B8DAF6C273BA2330037D21B /* redViewController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		4B8DAF6E273BA8590037D21B /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				4B8DAF6F273BA86B0037D21B /* GestureViewController.swift */,
+			);
+			path = Gesture;
+			sourceTree = "<group>";
+		};
 		4BB00527271983B000FCB080 = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +302,8 @@
 		4BB005632719875D00FCB080 /* ViewList */ = {
 			isa = PBXGroup;
 			children = (
+				4B8DAF6E273BA8590037D21B /* Gesture */,
+				4B8DAF6B273BA2140037D21B /* TabBarController */,
 				4B857B412733BFD300BCC424 /* TableView */,
 				4B7A395A272BF80B00E1C0BE /* JSONDecoder */,
 				4B5693E2272AB8740004D524 /* UIAlertController */,
@@ -450,6 +472,8 @@
 				4BB00534271983B000FCB080 /* AppDelegate.swift in Sources */,
 				4B857B472733C01400BCC424 /* TodoViewController.swift in Sources */,
 				4BB005662719883500FCB080 /* UIViewMenuViewController.swift in Sources */,
+				4B8DAF70273BA86B0037D21B /* GestureViewController.swift in Sources */,
+				4B8DAF6D273BA2330037D21B /* redViewController.swift in Sources */,
 				4B5693C6271D44A90004D524 /* UITextFieldViewViewController.swift in Sources */,
 				4B5693E1272696370004D524 /* AnimalInfo.swift in Sources */,
 				4B7A3966272BFFE800E1C0BE /* DiscUserInfo.swift in Sources */,
