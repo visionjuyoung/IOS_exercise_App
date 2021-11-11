@@ -49,8 +49,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         case 8:
             performSegue(withIdentifier: "GestureViewSegue", sender: nil)
         case 9:
-            performSegue(withIdentifier: "JsonDecoderSegue", sender: nil)
+            performSegue(withIdentifier: "SafariViewSegue", sender: nil)
         case 10:
+            performSegue(withIdentifier: "LocationViewSegue", sender: nil)
+        case 11:
+            performSegue(withIdentifier: "JsonDecoderSegue", sender: nil)
+        case 12:
             performSegue(withIdentifier: "TodoListSegue", sender: nil)
         default:
             return
@@ -59,7 +63,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 }
 
 class CellList {
-    let cellList: [String] = ["UIView", "UIImageView", "UITextField", "UITextView", "UISlider", "UINavigationController", "UIAlertController", "TabBarController", "GestureViewSegue", "JSON Decoder", "TableView(Todo List)"]
+    let cellList: [String] = ["UIView", "UIImageView", "UITextField", "UITextView", "UISlider", "UINavigationController", "UIAlertController", "TabBarController", "GestureViewSegue", "SafariViewController", "Map Kit View", "JSON Decoder", "TableView(Todo List)"]
     
     var numOfCell: Int {
         return cellList.count

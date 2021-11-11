@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4B070EBE272AD1490015FCD0 /* LogInPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B070EBD272AD1490015FCD0 /* LogInPageViewController.swift */; };
 		4B070EC2272AD2290015FCD0 /* InfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B070EC1272AD2290015FCD0 /* InfoPageViewController.swift */; };
+		4B3E3749273D0500009EC678 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E3748273D0500009EC678 /* SafariViewController.swift */; };
+		4B3E374C273D06AF009EC678 /* CoreLoacationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E374B273D06AF009EC678 /* CoreLoacationViewController.swift */; };
 		4B5693BD271C31350004D524 /* UIImageViewMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693BC271C31350004D524 /* UIImageViewMenuViewController.swift */; };
 		4B5693BF271C34660004D524 /* ViewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693BE271C34660004D524 /* ViewImageViewController.swift */; };
 		4B5693C1271C36A30004D524 /* AlphaImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693C0271C36A30004D524 /* AlphaImageViewViewController.swift */; };
@@ -70,6 +72,8 @@
 /* Begin PBXFileReference section */
 		4B070EBD272AD1490015FCD0 /* LogInPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPageViewController.swift; sourceTree = "<group>"; };
 		4B070EC1272AD2290015FCD0 /* InfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageViewController.swift; sourceTree = "<group>"; };
+		4B3E3748273D0500009EC678 /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
+		4B3E374B273D06AF009EC678 /* CoreLoacationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLoacationViewController.swift; sourceTree = "<group>"; };
 		4B5693BC271C31350004D524 /* UIImageViewMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewMenuViewController.swift; sourceTree = "<group>"; };
 		4B5693BE271C34660004D524 /* ViewImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewImageViewController.swift; sourceTree = "<group>"; };
 		4B5693C0271C36A30004D524 /* AlphaImageViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaImageViewViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +144,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B3E3747273D0348009EC678 /* SafariViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4B3E3748273D0500009EC678 /* SafariViewController.swift */,
+			);
+			path = SafariViewController;
+			sourceTree = "<group>";
+		};
+		4B3E374A273D067C009EC678 /* Current Location */ = {
+			isa = PBXGroup;
+			children = (
+				4B3E374B273D06AF009EC678 /* CoreLoacationViewController.swift */,
+			);
+			path = "Current Location";
+			sourceTree = "<group>";
+		};
 		4B5693BB271C30D50004D524 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +322,8 @@
 		4BB005632719875D00FCB080 /* ViewList */ = {
 			isa = PBXGroup;
 			children = (
+				4B3E374A273D067C009EC678 /* Current Location */,
+				4B3E3747273D0348009EC678 /* SafariViewController */,
 				4B8DAF6E273BA8590037D21B /* Gesture */,
 				4B8DAF6B273BA2140037D21B /* TabBarController */,
 				4B857B412733BFD300BCC424 /* TableView */,
@@ -473,6 +495,7 @@
 				4B857B472733C01400BCC424 /* TodoViewController.swift in Sources */,
 				4BB005662719883500FCB080 /* UIViewMenuViewController.swift in Sources */,
 				4B8DAF70273BA86B0037D21B /* GestureViewController.swift in Sources */,
+				4B3E374C273D06AF009EC678 /* CoreLoacationViewController.swift in Sources */,
 				4B8DAF6D273BA2330037D21B /* redViewController.swift in Sources */,
 				4B5693C6271D44A90004D524 /* UITextFieldViewViewController.swift in Sources */,
 				4B5693E1272696370004D524 /* AnimalInfo.swift in Sources */,
@@ -492,6 +515,7 @@
 				4B5693DF2722AEE90004D524 /* FinViewController.swift in Sources */,
 				4B5693CB271D59AF0004D524 /* UITextViewMenuViewController.swift in Sources */,
 				4B5693E8272AC25E0004D524 /* UserInfo.swift in Sources */,
+				4B3E3749273D0500009EC678 /* SafariViewController.swift in Sources */,
 				4B070EC2272AD2290015FCD0 /* InfoPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
