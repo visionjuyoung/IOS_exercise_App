@@ -11,6 +11,8 @@
 		4B070EC2272AD2290015FCD0 /* InfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B070EC1272AD2290015FCD0 /* InfoPageViewController.swift */; };
 		4B3E3749273D0500009EC678 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E3748273D0500009EC678 /* SafariViewController.swift */; };
 		4B3E374C273D06AF009EC678 /* CoreLoacationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E374B273D06AF009EC678 /* CoreLoacationViewController.swift */; };
+		4B538E932744EA3B00B9A71F /* UIButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B538E922744EA3B00B9A71F /* UIButtonViewController.swift */; };
+		4B538E952744EB2100B9A71F /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B538E942744EB2100B9A71F /* customButton.swift */; };
 		4B5693BD271C31350004D524 /* UIImageViewMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693BC271C31350004D524 /* UIImageViewMenuViewController.swift */; };
 		4B5693BF271C34660004D524 /* ViewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693BE271C34660004D524 /* ViewImageViewController.swift */; };
 		4B5693C1271C36A30004D524 /* AlphaImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5693C0271C36A30004D524 /* AlphaImageViewViewController.swift */; };
@@ -74,6 +76,8 @@
 		4B070EC1272AD2290015FCD0 /* InfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageViewController.swift; sourceTree = "<group>"; };
 		4B3E3748273D0500009EC678 /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
 		4B3E374B273D06AF009EC678 /* CoreLoacationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLoacationViewController.swift; sourceTree = "<group>"; };
+		4B538E922744EA3B00B9A71F /* UIButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonViewController.swift; sourceTree = "<group>"; };
+		4B538E942744EB2100B9A71F /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 		4B5693BC271C31350004D524 /* UIImageViewMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewMenuViewController.swift; sourceTree = "<group>"; };
 		4B5693BE271C34660004D524 /* ViewImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewImageViewController.swift; sourceTree = "<group>"; };
 		4B5693C0271C36A30004D524 /* AlphaImageViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaImageViewViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +162,15 @@
 				4B3E374B273D06AF009EC678 /* CoreLoacationViewController.swift */,
 			);
 			path = "Current Location";
+			sourceTree = "<group>";
+		};
+		4B538E912744EA1D00B9A71F /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				4B538E922744EA3B00B9A71F /* UIButtonViewController.swift */,
+				4B538E942744EB2100B9A71F /* customButton.swift */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 		4B5693BB271C30D50004D524 /* UIImageView */ = {
@@ -322,6 +335,7 @@
 		4BB005632719875D00FCB080 /* ViewList */ = {
 			isa = PBXGroup;
 			children = (
+				4B538E912744EA1D00B9A71F /* UIButton */,
 				4B3E374A273D067C009EC678 /* Current Location */,
 				4B3E3747273D0348009EC678 /* SafariViewController */,
 				4B8DAF6E273BA8590037D21B /* Gesture */,
@@ -486,6 +500,7 @@
 				4B5693CD271D5E070004D524 /* UITextViewAutoSizeViewController.swift in Sources */,
 				4B5693DD2722AEDD0004D524 /* DetailViewController.swift in Sources */,
 				4B5693BD271C31350004D524 /* UIImageViewMenuViewController.swift in Sources */,
+				4B538E932744EA3B00B9A71F /* UIButtonViewController.swift in Sources */,
 				4BB00538271983B000FCB080 /* ViewController.swift in Sources */,
 				4B5693C9271D4DD30004D524 /* UITextViewViewController.swift in Sources */,
 				4B7A3962272BFDDF00E1C0BE /* Qusetion.swift in Sources */,
@@ -500,6 +515,7 @@
 				4B5693C6271D44A90004D524 /* UITextFieldViewViewController.swift in Sources */,
 				4B5693E1272696370004D524 /* AnimalInfo.swift in Sources */,
 				4B7A3966272BFFE800E1C0BE /* DiscUserInfo.swift in Sources */,
+				4B538E952744EB2100B9A71F /* customButton.swift in Sources */,
 				4B5693C1271C36A30004D524 /* AlphaImageViewViewController.swift in Sources */,
 				4B5693DB2722AECF0004D524 /* InitialMenuViewController.swift in Sources */,
 				4BB0056A271995A700FCB080 /* AnimationViewController.swift in Sources */,

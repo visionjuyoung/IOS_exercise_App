@@ -59,6 +59,7 @@
                         <segue destination="Bnl-Pt-Iat" kind="show" identifier="GestureViewSegue" id="0EF-qP-PiY"/>
                         <segue destination="Afi-v5-6rg" kind="show" identifier="SafariViewSegue" id="1HO-aZ-g6M"/>
                         <segue destination="ckM-pa-jbL" kind="show" identifier="LocationViewSegue" id="O1Q-9X-u1A"/>
+                        <segue destination="79S-No-Gug" kind="show" identifier="UIButtonSegue" id="MC8-sS-Q9q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -1902,6 +1903,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="neX-MR-DY5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2339.130434782609" y="7504.6875"/>
+        </scene>
+        <!--Button View Controller-->
+        <scene sceneID="pIw-Qk-Ej5">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="79S-No-Gug" customClass="UIButtonViewController" customModule="exerciseIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8np-m6-p89">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orH-b9-zZq" customClass="customButton" customModule="exerciseIos" customModuleProvider="target">
+                                <rect key="frame" x="107" y="423" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UlM-LX-Nqp"/>
+                                    <constraint firstAttribute="width" constant="200" id="y4g-cm-YRl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="pressButton:" destination="79S-No-Gug" eventType="touchUpInside" id="8LZ-21-bKE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbh-yP-BTQ">
+                                <rect key="frame" x="16" y="60" width="55.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="back"/>
+                                <connections>
+                                    <action selector="close:" destination="79S-No-Gug" eventType="touchUpInside" id="87a-eu-eCB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZnT-bY-0kY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lbh-yP-BTQ" firstAttribute="leading" secondItem="ZnT-bY-0kY" secondAttribute="leading" constant="16" id="A6F-yd-Ynv"/>
+                            <constraint firstItem="orH-b9-zZq" firstAttribute="centerX" secondItem="8np-m6-p89" secondAttribute="centerX" id="WC1-98-o75"/>
+                            <constraint firstItem="Lbh-yP-BTQ" firstAttribute="top" secondItem="ZnT-bY-0kY" secondAttribute="top" constant="16" id="fRj-0Y-9M1"/>
+                            <constraint firstItem="orH-b9-zZq" firstAttribute="centerY" secondItem="8np-m6-p89" secondAttribute="centerY" id="vOW-br-8ec"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vcb-8K-3Dp"/>
+                    <connections>
+                        <outlet property="loadingButton" destination="orH-b9-zZq" id="hTO-tX-HOd"/>
+                        <outlet property="mainview" destination="8np-m6-p89" id="Kub-L8-SPK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x2N-Ec-XSx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2308" y="8179"/>
         </scene>
         <!--sliver-->
         <scene sceneID="8KO-kd-l50">
