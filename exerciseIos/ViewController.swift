@@ -58,6 +58,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             performSegue(withIdentifier: "TodoListSegue", sender: nil)
         case 13:
             performSegue(withIdentifier: "UIButtonSegue", sender: nil)
+        case 14:
+            performSegue(withIdentifier: "pullDownButtonSegue", sender: nil)
+        case 15:
+            performSegue(withIdentifier: "pageControlSegue", sender: nil)
+        case 16:
+            performSegue(withIdentifier: "scrollViewSegue", sender: nil)
         default:
             return
         }
@@ -65,7 +71,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 }
 
 class CellList {
-    let cellList: [String] = ["UIView", "UIImageView", "UITextField", "UITextView", "UISlider", "UINavigationController", "UIAlertController", "TabBarController", "GestureViewSegue", "SafariViewController", "Map Kit View", "JSON Decoder", "TableView(Todo List)", "customButton & Activity Indicator"]
+    let cellList: [String] = ["UIView", "UIImageView", "UITextField", "UITextView", "UISlider", "UINavigationController", "UIAlertController", "TabBarController", "GestureViewSegue", "SafariViewController", "Map Kit View", "JSON Decoder", "TableView(Todo List)", "customButton & Activity Indicator", "PullDownButton", "PageControl", "UIScrollView"]
     
     var numOfCell: Int {
         return cellList.count
