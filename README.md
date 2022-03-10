@@ -1,39 +1,34 @@
-# UIView
+## UIView
   * AnimationView
-  
-    <img src="https://user-images.githubusercontent.com/60837531/141609608-728dd812-2ee9-4fad-b7cd-bd631686b591.gif" width="150"/>
-    
   * CreateView
   
-    <img src="https://user-images.githubusercontent.com/60837531/141609534-6ad73463-65e7-45b0-a64e-5a91ec866d2c.gif" width="150"/>
-  
-# UIImageView
+## UIImageView
   * Image View
   * Image Alpha
   * Image Animate
 
-# UITextField
+## UITextField
   * Edit
   * Autosize
 
-# UITextView
+## UITextView
 
-# UISlider
+## UISlider
 
-# UINavigationController
+## UINavigationController
 
-# UIAlertController
+## UIAlertController
 
-# TabBarController
+## TabBarController
 
-# Gesture
+## Gesture
 
-# SafariViewController
+## SafariViewController
 
-# Map Kit View
+## Map Kit View
 
-# JSONDecoder
+## JSONDecoder
 
-# TableView(Todo List)
+## TableView(Todo List)
 
-# UIButton, Activity Indicator
+## UIButton, Activity Indicator
